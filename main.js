@@ -35,14 +35,14 @@ fs.exists(__dirname + '/tmp/products.xml',(data)=>{
         )
          .then(response  => {
             // console.log(response.data)
-            fs.writeFileSync('D:/elevania/tmp/products.xml',response.data)
+            fs.writeFileSync('D:/elevania/elev-api/tmp/products.xml',response.data)
             //insert to table 
             const client = new pg.Client(conString);
 
             client.connect();
             if(client.connect) console.log('Connection to db ok')
 
-            let productXML = fs.readFileSync('./tmp/products.xml',(err,data)=>{
+            let productXML = fs.readFileSync('D:/elevania/elev-api/tmp/products.xml',(err,data)=>{
                 if (err) throw err
                 console.log(data)
             })
@@ -66,7 +66,7 @@ fs.exists(__dirname + '/tmp/products.xml',(data)=>{
             
          })
          .catch(e =>{
-            console.log('hit to ' + e.hostname  + ' error! . XML file not created')
+            console.log( 'XML file not created')
          })
     }
 })

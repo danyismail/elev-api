@@ -1,6 +1,11 @@
 # elev-api
 api testing 
+
+## open postgre , lalu execute create-db.sql dan items.sql
+
 ## jalankan npm run start
+================================================================
+
 ### GET / halaman utama => get data from api then insert into db
 ### GET /product => list all product
 ### GET /product/add => input form to add data | still not working :(
