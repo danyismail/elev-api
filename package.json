@@ -1,0 +1,27 @@
+{
+  "name": "elevania",
+  "version": "1.0.0",
+  "description": "api elevenia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0",
+    "@hapi/vision": "^5.5.4",
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
+    "joi": "^14.3.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.4",
+    "pg": "^7.12.1",
+    "serializer": "0.0.3",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.22",
+    "xmldom": "^0.1.27"
+  }
+}
